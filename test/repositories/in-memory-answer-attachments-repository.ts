@@ -1,8 +1,8 @@
-import { IAnswerAttachmentsRepository } from '@/domain/forum/application/repositories/answer-attachments-repository'
+import { AnswerAttachmentsRepository } from '@/domain/forum/application/repositories/answer-attachments-repository'
 import { AnswerAttachment } from '@/domain/forum/enterprise/entities/answer-attachment'
 
 export class InMemoryAnswerAttachmentsRepository
-  implements IAnswerAttachmentsRepository
+  implements AnswerAttachmentsRepository
 {
   public items: AnswerAttachment[] = []
 
