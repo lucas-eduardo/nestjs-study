@@ -10,7 +10,7 @@ export interface IAnswerProps {
   content: string
   attachments: AnswerAttachmentList
   createdAt: Date
-  updatedAt?: Date
+  updatedAt?: Date | null
 }
 
 export class Answer extends AggregateRoot<IAnswerProps> {
